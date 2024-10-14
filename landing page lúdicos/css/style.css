@@ -51,7 +51,7 @@ header {
 .menu a:hover,
 .mostrar-menu:hover,
 .esconder-menu:hover {
-  color: #18031a;
+  color: #b6c20a;
 }
 #check {
   display: none;
@@ -98,7 +98,7 @@ header {
   border-radius: 20px;
 }
 .boton-informacion:hover {
-  background: #181717;
+  background: #b6c20a;
 }
 .productos-mas-vendidos {
   display: flex;
@@ -184,7 +184,7 @@ h4 {
   transition: background-color 0.3s ease;
 }
 .registro button:hover {
-  background-color: #181717;
+  background-color: #b6c20a;
 }
 /* Footer */
 .footer {
