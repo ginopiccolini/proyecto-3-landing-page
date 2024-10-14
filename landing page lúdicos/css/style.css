@@ -61,16 +61,16 @@ header {
   padding: 0 50px;
   background-image: url(/assets/img/adultosjugando.jpg);
   background-repeat: no-repeat;
-  height: 60vh;
+  height: 50vh;
   background-size: cover;
   margin-top: 50px;
 }
 .jumbotron::before {
   content: '';
-  background: rgba(0, 0, 0, 0.877);
+  background: rgba(5, 5, 5, 0.877);
   position: absolute;
   width: 100%;
-  height: 60vh;
+  height: 50vh;
   left: 0;
 }
 .container {
@@ -193,6 +193,7 @@ h4 {
   background-color: var(--primary-main);
   padding: 70px 100px;
   color: var(--secondary-main);
+  text-align: center;
 }
 .footer-row {
   display: flex;
