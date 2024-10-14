@@ -1,0 +1,301 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body {
+  background-color: #111113;
+}
+.logo-ludicos {
+  padding: 15px 15px;
+  text-align: center;
+}
+/*header*/
+header {
+  height: 60px;
+  background: #3a0b41;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nombre-empresa {
+  font-family: caveat, Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+  font-size: 50px;
+  margin-top: 60px;
+}
+/* navbar */
+.menu {
+  margin: auto;
+}
+.menu a {
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0 120px;
+  transition: 0.4s;
+}
+.mostrar-menu,
+.esconder-menu {
+  font-size: 40px;
+  cursor: pointer;
+  display: none;
+  transition: 0.4s;
+}
+.mostrar-menu {
+  order: 1;
+}
+.menu a:hover,
+.mostrar-menu:hover,
+.esconder-menu:hover {
+  color: #18031a;
+}
+#check {
+  display: none;
+}
+/* section jumbotron */
+.jumbotron {
+  padding: 0 50px;
+  background-image: url(/assets/img/adultosjugando.jpg);
+  background-repeat: no-repeat;
+  height: 60vh;
+  background-size: cover;
+  margin-top: 50px;
+}
+.jumbotron::before {
+  content: '';
+  background: rgba(0, 0, 0, 0.877);
+  position: absolute;
+  width: 100%;
+  height: 60vh;
+  left: 0;
+}
+.container {
+  position: relative;
+  color: #fff;
+  font-size: 25px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.container h3 span {
+  font-weight: 600;
+}
+.boton-informacion {
+  text-decoration: none;
+  border: 0.5px solid #ffffff;
+  margin-top: 20px;
+  padding: 10px 60px;
+  align-self: center;
+  transition: all 0.4s;
+  background-color: #3a0b41;
+  color: #ffffff;
+  border-radius: 20px;
+}
+.boton-informacion:hover {
+  background: #181717;
+}
+.productos-mas-vendidos {
+  display: flex;
+  background-color: #b6c20a;
+  font-size: 40px;
+  color: #101011;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0px 0px 0px;
+  margin-top: 120px;
+}
+/* catalogo de productos */
+.catalogo-productos {
+  background: #b6c20a;
+}
+.catalogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.item {
+  display: flex;
+  width: 300px;
+  margin: 50px;
+  background-color: #060606;
+  border-radius: 50px;
+  box-shadow: 0 2px 10px rgba(251, 251, 251, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+.item:hover {
+  transform: translateY(-30px);
+}
+.item a {
+  display: block;
+  text-decoration: none;
+  color: #2d2d2d;
+}
+.item img {
+  width: 100%;
+  height: 350px;
+  border-radius: 8px 8px 0 0;
+}
+.item h3,
+h4 {
+  padding: 15px;
+  margin: 0;
+  font-size: 20px;
+  background-color: #000000;
+  color: #ffffff;
+  border-radius: 0 0 8px 8px;
+}
+/* Sección de Registro */
+.registro {
+  display: flex;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 80px 0;
+  text-align: center;
+  justify-content: center;
+}
+.registro h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+.registro input[type="text"],
+.registro input[type="email"],
+.registro button {
+  padding: 12px;
+  margin: 8px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.registro button {
+  background-color: #3a0b41;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.registro button:hover {
+  background-color: #181717;
+}
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: center;
+  background-color: var(--primary-main);
+  padding: 70px 100px;
+  color: var(--secondary-main);
+}
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer-links {
+  width: 20%;
+  padding: 0 15px;
+}
+.footer-links h6 {
+  font-size: 14px;
+  color: #ffffff;
+  margin-bottom: 25px;
+  font-weight: 500;
+  display: inline-block;
+  text-decoration: underline;
+}
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+.footer-links ul li {
+  margin-left: 0;
+}
+.footer-links ul li a {
+  font-size: 14px;
+  text-decoration: none;
+  color: #ffffff;
+  display: block;
+  margin-bottom: 15px;
+}
+.footer-links ul li a:hover {
+  padding-left: 4px;
+}
+.social-links {
+  display: flex;
+}
+.social-links a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 40px;
+  width: 30px;
+  margin: 0 30px 30px 0;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 50%;
+  color: #ffffff;
+  border-color: var(--primary-light);
+  text-decoration: none;
+}
+.social-links a:hover {
+  background-color: var(--primary-light);
+}
+/* responsive */
+@media (max-width: 768px) {
+  .mostrar-menu,
+  .esconder-menu {
+    display: block;
+  }
+  .menu {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #511658;
+    right: -100%;
+    top: 0;
+    text-align: center;
+    padding: 100px 0px;
+    z-index: 100;
+    transition: 0.8s;
+  }
+  .menu a {
+    display: block;
+    padding: 20px;
+  }
+  .esconder-menu {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+  }
+  #check:checked ~ .menu {
+    right: 0;
+  }
+  .jumbotron {
+    padding: 0 20px;
+    height: 50vh;
+    background-size: contain;
+  }
+  .productos-mas-vendidos {
+    flex-direction: column;
+    padding-top: 40px;
+    margin-top: 40px;
+  }
+  .catalogo {
+    flex-direction: column;
+  }
+  .registro {
+    flex-direction: column;
+    padding: 50px 0;
+  }
+  .footer {
+    flex-direction: column;
+    padding: 20px;
+  }
+}
